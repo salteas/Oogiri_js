@@ -1,0 +1,18 @@
+<% layout("layouts/boilerplate") %>
+    <div class="card m-auto mt-4 shadow bg-body rounded" style="width: 100%;">
+        <div class="mt-4 mb-5 m-auto">
+            <p class="card-title ps-3 pe-3 ps-lg-2 pe-lg-2 p-font"><b>お題B</b></p>
+            <p class="m-auto mt-2 ps-2 pe-2 ps-lg-1 pe-lg-1 p-font-title text-center"><b>
+                    <%= titles.title %>
+                </b></p>
+        </div>
+        <ul>
+            <li>各ボケに対して0票,2票,3票,4票を選択できます</li>
+            <li>差をつけない投票は禁止です</li>
+            <li>投票の内容は後から更新できません</li>
+        </ul>
+        <div class="mt-2 mb-2">
+            <form action="/oogiri/vote/b/<%= titles._id %>?_method=PATCH" method="POST" novalidate
+                class="needs-validation">
+                <%- include("../partials/votePlace", {shuffleProduct: shuffleProduct, polledProducts: polledProducts})
+                    %>

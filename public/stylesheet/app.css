@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F7F5FA;
+}
+
+h1,
+h2 {
+  color: #070A39;
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.left {
+  display: flex;
+}
+
+.left-content {
+  width: 5%;
+  text-align: center;
+}
+
+.left-content-text {
+  display: inline-block;
+  width: 80%;
+}
+
+.join-link {
+  display: block;
+  width: 130px;
+  padding: 0.8em;
+  text-decoration: none;
+  color: #fff;
+  background: #000000;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.join-link:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.vote-link {
+  display: block;
+  width: 130px;
+  padding: 0.8em;
+  text-decoration: none;
+  color: #fff;
+  background: #130134;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.vote-link:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.rank:nth-child(2) {
+  color: #ff3a24;
+}
+
+.rank:nth-child(3) {
+  color: #ff5e24;
+}
+
+.rank:nth-child(4) {
+  color: #ff951c;
+}
+
+.resultLinktop {
+  color: #ff3a24;
+  text-decoration: none;
+  border-bottom: 1px solid #ff3a24;
+  transition: all 0.5s;
+}
+
+.resultLinktop:hover {
+  color: rgba(255, 58, 36, 0.5);
+}
+
+.resultLinksecond {
+  color: #ff5e24;
+  text-decoration: none;
+  border-bottom: 1px solid #ff5e24;
+  transition: all 0.5s;
+}
+
+.resultLinksecond:hover {
+  color: rgba(255, 94, 36, 0.5);
+}
+
+.resultLinkthird {
+  color: #ff951c;
+  text-decoration: none;
+  border-bottom: 1px solid #ff951c;
+  transition: all 0.5s;
+}
+
+.resultLinkthird:hover {
+  color: rgba(255, 149, 28, 0.5);
+}
+
+.resultLink {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  transition: all 0.5s;
+}
+
+.resultLink:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.p-font {
+  font-size: 20px;
+}
+
+.p-font-title {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 570px) {
+  li {
+    font-size: 10px;
+  }
+
+  .left-content {
+    width: 7%;
+    text-align: center;
+  }
+
+  .left-content-text {
+    display: inline-block;    
+    width: 72%;
+  }
+
+  .small-size {
+    font-size: 9px;
+  }
+
+  .p-font {
+    font-size: 13px;
+  }
+
+  .p-font-title {
+    font-size: 18px;
+  }
+
+  .p-font-joke {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 3px;
+  }
+}
